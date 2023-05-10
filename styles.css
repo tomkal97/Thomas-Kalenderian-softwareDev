@@ -1,0 +1,87 @@
+/* General styles */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: #3f3636;
+}
+
+/* Mage theme colors */
+:root {
+    --primary-color: #6c3ec1; /* Purple */
+    --secondary-color: #9dff63; /* Lime Green */
+    --tertiary-color: #ff99cc; /* Nerdy Pink */
+    --quaternary-color: #32cdcd; /* Nerdy Cyan */
+}
+
+/* Header and navigation */
+header {
+    background-color: var(--primary-color);
+    padding: 1rem 0;
+}
+
+nav {
+    display: flex;
+    justify-content: space-around;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav li {
+    display: inline;
+    margin-right: 1rem;
+}
+
+nav a {
+    text-decoration: none;
+    color: #ffffff;
+}
+
+/* Main content */
+main {
+    padding: 2rem;
+}
+
+h1, h2, h3 {
+    color: var(--secondary-color);
+}
+
+p {
+    color: var(--quaternary-color);
+}
+
+a {
+    color: var(--tertiary-color);
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Buttons */
+button {
+    background-color: var(--secondary-color);
+    border: none;
+    color: #ffffff;
+    padding: 0.5rem 1rem;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: var(--tertiary-color);
+}
+
+/* Footer */
+footer {
+    background-color: var(--primary-color);
+    color: #ffffff;
+    text-align: center;
+    padding: 1rem 0;
+}

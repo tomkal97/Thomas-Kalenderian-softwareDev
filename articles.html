@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Multiple Landing Pages</title>
+    <style>
+        .page {
+            display: none;
+        }
+        .active {
+            display: block;
+        }
+    </style>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <nav>
+        <button onclick="changePage('home')">Home</button>
+        <button onclick="changePage('about')">About</button>
+        <button onclick="changePage('contact')">Contact</button>
+    </nav>
+
+    <div id="home" class="page active">
+        <h1>Welcome to the Home Page</h1>
+        <p>This is the home page content.</p>
+    </div>
+
+    <div id="about" class="page">
+        <h1>About Us</h1>
+        <p>This is the about page content.</p>
+    </div>
+
+    <div id="contact" class="page">
+        <h1>Contact Us</h1>
+        <p>This is the contact page content.</p>
+    </div>
+
+    <script>
+        function changePage(pageId) {
+            var pages = document.getElementsByClassName('page');
+            for (var i = 0; i < pages.length; i++) {
+                pages[i].classList.remove('active');
+            }
+            document.getElementById(pageId).classList.add('active');
+        }
+    </script>
+</body>
+</html>
